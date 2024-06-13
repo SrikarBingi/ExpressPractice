@@ -31,4 +31,6 @@ app.all("*", (req, res) => {
   res.status(404).send("Route not found");
 });
 
-app.listen(3003);
+app.listen(3003,()=>{
+  console.log("FileServer in express");
+});
